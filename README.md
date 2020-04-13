@@ -1,6 +1,6 @@
-# i_am_rich
+# flutter_course_angela
 
-A new Flutter project.
+Flutter project based on the course by angela from appbrewery.
 
 ## Getting Started
 
