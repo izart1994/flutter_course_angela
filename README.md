@@ -1,6 +1,6 @@
 # flutter_course_angela
 
-Flutter project based on the course by angela from appbrewery. test
+Flutter project based on the course by angela from appbrewery.
 
 ## Getting Started
 
