@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
 
+import '../data/quiz_master.dart';
+
 class QuizPage extends StatefulWidget {
   @override
   _QuizPageState createState() => _QuizPageState();
 }
 
 class _QuizPageState extends State<QuizPage> {
+  int number = 0;
+
+  QuizMaster quiz = QuizMaster();
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -18,7 +24,7 @@ class _QuizPageState extends State<QuizPage> {
             padding: EdgeInsets.all(10.0),
             child: Center(
               child: Text(
-                'This is where the question text will go.',
+                quiz.quizMaster[number].questionText,
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 25.0,
@@ -42,7 +48,17 @@ class _QuizPageState extends State<QuizPage> {
                 ),
               ),
               onPressed: () {
-                //The user picked true.
+                bool quizAnswer = quiz.quizMaster[number].questionAnswer;
+
+                if (quizAnswer == true) {
+                  print('true');
+                } else {
+                  print('false');
+                }
+
+                setState(() {
+                  number++;
+                });
               },
             ),
           ),
@@ -60,7 +76,17 @@ class _QuizPageState extends State<QuizPage> {
                 ),
               ),
               onPressed: () {
-                //The user picked false.
+                bool quizAnswer = quiz.quizMaster[number].questionAnswer;
+
+                if (quizAnswer == false) {
+                  print('true');
+                } else {
+                  print('false');
+                }
+
+                setState(() {
+                  number++;
+                });
               },
             ),
           ),
