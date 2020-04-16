@@ -2,15 +2,25 @@
 
 Flutter project based on the course by angela from appbrewery.
 
-## Getting Started
+# contain a few apps
 
-This project is a starting point for a Flutter application.
+## home.dart
+    - show one picture in the beautiful way
 
-A few resources to get you started if this is your first Flutter project:
+## micard.dart
+    - contain info about myself
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## dicee.dart
+    - contain 2 dice with random number for every dice
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## magicball.dart
+    - answer each of your question using random number
+
+## xylophone.dart
+    - beautiful sound for every button you press
+
+## quiz.dart
+    - question and point out how many correct or wrong and will turn back to one if finish
+
+## destini_challange.dart
+    - question that related to one another and its like a simple maze to build it
