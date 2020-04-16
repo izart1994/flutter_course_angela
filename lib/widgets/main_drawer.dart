@@ -5,6 +5,7 @@ import '../screens/dicee.dart';
 import '../screens/magicball.dart';
 import '../screens/xylophone.dart';
 import '../screens/quiz.dart';
+import '../screens/destini_challenge.dart';
 
 class MainDrawer extends StatelessWidget {
   Widget buildListTile(String title, IconData icon, Function tapHandler) {
@@ -63,6 +64,9 @@ class MainDrawer extends StatelessWidget {
           }),
           buildListTile('Quiz', Icons.question_answer, () {
             Navigator.of(context).pushReplacementNamed(Quiz.routeName);
+          }),
+          buildListTile('Destini Challange', Icons.question_answer, () {
+            Navigator.of(context).pushReplacementNamed(DestiniChallange.routeName);
           }),
         ],
       ),

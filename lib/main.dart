@@ -6,6 +6,7 @@ import 'screens/dicee.dart';
 import 'screens/magicball.dart';
 import 'screens/xylophone.dart';
 import 'screens/quiz.dart';
+import 'screens/destini_challenge.dart';
 
 void main() {
   runApp(MyApp());
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
         MagicBall.routeName: (context) => MagicBall(),
         Xylophone.routeName: (context) => Xylophone(),
         Quiz.routeName: (context) => Quiz(),
+        DestiniChallange.routeName: (context) => DestiniChallange(),
       },
     );
   }
