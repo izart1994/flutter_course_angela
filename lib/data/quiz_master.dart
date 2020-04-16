@@ -1,10 +1,13 @@
 import '../models/questions.dart';
 
 class QuizMaster {
-  List<Questions> quizMaster = [
+  int _number = 0;
+
+  List<Questions> _quizMaster = [
     Questions('Some cats are actually allergic to humans', true),
     Questions('You can lead a cow down stairs but not up stairs.', false),
-    Questions('Approximately one quarter of human bones are in the feet.', true),
+    Questions(
+        'Approximately one quarter of human bones are in the feet.', true),
     Questions('A slug\'s blood is green.', true),
     Questions('Buzz Aldrin\'s mother\'s maiden name was \"Moon\".', true),
     Questions('It is illegal to pee in the Ocean in Portugal.', true),
@@ -28,4 +31,31 @@ class QuizMaster {
         'In West Virginia, USA, if you accidentally hit an animal with your car, you are free to take it home to eat.',
         true),
   ];
+
+  void nextQuestion() {
+    if (_number < _quizMaster.length - 1) {
+      _number++;
+    }
+  }
+
+  String getQuestionText() {
+    return _quizMaster[_number].questionText;
+  }
+
+  bool getQuestionAnswer() {
+    return _quizMaster[_number].questionAnswer;
+  }
+
+  bool isFinished() {
+    if (_number >= _quizMaster.length - 1) {
+      print('Now returning true');
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  void reset() {
+    _number = 0;
+  }
 }
